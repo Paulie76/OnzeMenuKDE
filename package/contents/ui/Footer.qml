@@ -97,7 +97,7 @@ RowLayout{
 
     PlasmaComponents3.ToolButton {
         icon.name:   "system-lock-screen"
-        onClicked: pmEngine.performOperation("lockScreen")
+        onClicked: sm.lock()
         ToolTip.delay: 1000
         ToolTip.timeout: 1000
         ToolTip.visible: hovered
@@ -107,7 +107,7 @@ RowLayout{
 
     PlasmaComponents3.ToolButton {
         icon.name:  "system-shutdown"
-        onClicked: pmEngine.performOperation("requestShutDown")
+        onClicked: sm.requestShutdown()
         //Layout.rightMargin: 10
         ToolTip.delay: 1000
         ToolTip.timeout: 1000
